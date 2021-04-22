@@ -10,6 +10,12 @@ body {
   font-family: Roboto, sans-serif; 
   
 }
+
+.container{
+    margin:20px;
+    display:flex;
+}
+
 $lt-gray: #ddd;
 $background-dark: #512DA8;
 $background-light: #9575CD;
@@ -27,13 +33,6 @@ $divider-color:        #BDBDBD;
     margin: 0px auto;
     padding: $pad-up-down $pad-left-right;
 }
-
-.container{
-    margin:20px;
-    display:flex;
-}
-
-
 .background-primary {
   background-color: $background-dark!important;
 }
