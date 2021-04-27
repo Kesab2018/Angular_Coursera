@@ -17,6 +17,7 @@
     "strictPropertyInitialization": false,
     "target": "es2015",
     "module": "es2020",
+    "strictNullChecks": false,
     
     "lib": [
       "es2018",
@@ -28,6 +29,7 @@
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
     "strictTemplates": true,
-    "strictPropertyInitialization": false
+    "strictPropertyInitialization": false,
+    "strictNullChecks": false
   }
 }
