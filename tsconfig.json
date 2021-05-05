@@ -18,6 +18,7 @@
     "target": "es2015",
     "module": "es2020",
     "strictNullChecks": false,
+    "suppressImplicitAnyIndexErrors": true,
     
     "lib": [
       "es2018",
@@ -30,6 +31,7 @@
     "strictInputAccessModifiers": true,
     "strictTemplates": true,
     "strictPropertyInitialization": false,
-    "strictNullChecks": false
+    "strictNullChecks": false,
+    "suppressImplicitAnyIndexErrors": true,
   }
 }
