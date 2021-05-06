@@ -33,5 +33,6 @@
     "strictPropertyInitialization": false,
     "strictNullChecks": false,
     "suppressImplicitAnyIndexErrors": true,
+    "noImplicitAny": false,
   }
 }

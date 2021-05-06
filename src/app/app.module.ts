@@ -26,12 +26,14 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { AppRoutingModule } from './app-routing.module';
-
+import { HttpClientModule } from '@angular/common/http';
 
 import { DishService } from './services/dish.service';
 import {PromotionService} from './services/promotion.service';
 import { LeaderService } from './services/leader.service';
 import { LoginComponent } from './login/login.component';
+
+import { baseURL } from './shared/baseurl';
 
 @NgModule({
   declarations: [
@@ -63,10 +65,14 @@ import { LoginComponent } from './login/login.component';
     FormsModule ,
     MatSelectModule,
     MatSlideToggleModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule ,
 
   ],
-  providers: [DishService,PromotionService,LeaderService],
+  providers: [DishService,PromotionService,LeaderService, {provide: 'BaseURL', useValue: baseURL}
+   
+  ],
+  
   entryComponents: [
     LoginComponent
 ],
